@@ -1,0 +1,31 @@
+//empty for now.
+
+/*
+SakuraMenuGreetings : nonoverlap
+{
+	"Hello."
+	"How can I help you?"
+}
+
+//Because there is an all modifier here, you don't need to write -- between menu options
+OnSakuraMenu : all
+{
+	"\0\s[0]\b[2]\![set,autoscroll,disable]"
+	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
+	
+	"\n\n\_q"
+	
+	"\![*]\q[Talk to me,OnAiTalk]  "
+	switch LastTalk == "" //Uses top option if there is a dialogue to repeat
+	{
+		"\![*]\q[Say that again,OnLastTalk]"
+		"\![*]\f[color,disable]Say that again\f[color,default]"
+	}
+	
+	"\n\n"
+	
+	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
+	
+	"\![*]\q[Cancel,blank]"	
+}
+*/

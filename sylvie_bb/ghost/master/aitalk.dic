@@ -1,0 +1,164 @@
+OnAiTalk
+{
+	if CHAIN.IDName != ""
+	{
+		LastTalk = ChainTalk
+	}
+	else
+	{
+		LastTalk = RandomTalk
+	}
+	LastTalk
+}
+
+RandomTalk : nonoverlap_pool
+{
+
+	all:{"\1\s[11]\i[1010]\0\s[0]\i[1010]"
+	"...Zzznn...\w8\w8\1"
+	"Ahahaha, when did you become such a light sleeper?"}
+	
+	all:{"\1\s[11]\i[1010]\0\s[0]\i[1010]"
+	"...Zzznn...\w8\w8\1"
+	"I can leave her to rest..."}
+}
+
+//first chain.
+convo_blanket
+{{CHAIN
+	all:{"\0\s[1]\i[1]\1\s[11]"
+	"Oh, Sylvie, I... \w8\s[20]\0\s[50]\i[1]\1I missed you so much, Syllie!\w8\w8\0"
+	"O-Oh-- \w8Pfft, \w4Bonbon, \w4we saw eachother yesterday!\w8\w8\1\n\n[half]"
+	"I know, I know. \w8That was because I was helping you move! \w8This is different! \w8We haven't lived together since graduating, and this place is just so... \w8New!\w8\w8\0\n\n[half]"
+	"You're telling me.\e"
+	}
+	
+	all:{"\1\s[20]\0\s[50]\i[1]"
+	"Okay, okay, I wanna see the movie you were talking about.\w8\w8\1"
+	"You sure? You haven't even put sheets on your bed yet.\w8\w8\0\n\n[half]"
+	"\s[51]\i[1]I'm tired, Bonnie. For me? Please?\w8\w8\i[1000]\1\n\n[half]"
+	"\i[1000]Anything for you, Syllie.\e"
+	}
+	
+	all:{"\1\s[10]\i[1001]\0\s[1]\i[1]\i[1001]"
+	"Oh? \w8I thought you hated this movie!\w8\w8\1"
+	"Well...! \w8I changed my mind. \w8I used to watch this after work because it reminded me of you, so I kinda...\w8\w8\0\n\n[half]"
+	"That... \w8That's so sweet, Bonnie. \w8\w8...Are you sure that isn't just The Curse of The Bunwolf slowly worming it's way into your pure, innocent heart...?!\w8\w8\1\n\n[half]"
+	"Hahahaha! \w8Oh, stop that!"
+	}
+
+	all:{"\0\s[0]\i[1]\i[1]\1\s[10]"
+	"Gosh, the bunwolf is so cool.\w8\w8\0"
+	"Hmm... \w8Do you want to be a bunwolf, or be WITH a bunwolf?\w8\w8\1\n\n[half]"
+	"Pfft-- \w8Both! Why not both?\w8\w8\0\n\n[half]"
+	"\s[1]\i[1]Looks like you're gonna have to bite me and turn me into one with you, then.\w8\w8\1\n\n[half]"
+	"Hehehe~ \w8Don't tempt me!"
+	}
+
+	all:{"\0\s[0]\i[1]\1\s[10]"
+	"Um, \w4it might be sort of silly, \w4but I started reading into old legends about cryptids across the Bramblebrush 'cause of this.\w8\w8\0"
+	"\s[1]\i[1]What? \w8No, \w4that's not silly, \w4that's so cool! \w8Damn, the Valarian even has stuff like that?\w8\w8\1\n\n[half]"
+	"Yeah! \w8News reports all the way back when the capitol formed, and then some! \w8Picking up on those snippets of past lives really makes the job worth it...!"
+	}
+
+	all:{"\1\s[10]\0\s[0]\i[1]"
+	"...\w8Worth it, \w8huh.\w8\w8\1"
+	"...\w8Oh, \8geez, \w8we said we wouldn't talk about work! \w8\w2I'm sorry.\w8\w8\0\n\n[half]"
+	"No, no, it's okay! \w8I asked! \w8Tell me what you read about, Bonbon. \w8Anything cool?\w8\w8\1\n\n[half]"
+	"\1Well... \w8I DO have a solid pawful of fun facts I'm itching to share..."
+	}
+
+	all:{"\0\s[1]\i[1]\1\s[10]"
+	"Did you know Alnoth encountered a pack of bunwolves in the Deep Bramble, \w6and they lead him to learn the secret behind integrating runes?\w8\w8\0"
+	"Hahaha! \w6No way! \w6He was having his own bunwolf adventure and no one told me?!\w8\w8\1\n\n[half]"
+	"It's in the fourth volume of Alnoth's Adventures!\w8\w8\0\n\n[half]"
+	"THAT book? \w8\s[0]\i[1]Damn, \w6that's like, \w8\s[1]\i[1]basic curriculum.\w8\w8\1\n\n[half]"
+	"Oh, there's a lot of instances of Alnoth reporting crazy things, \w8and the big prevailing idea in academia is that he was LYING. \w8I don't know if I believe that... \w8But that's an entire field of debate! \w8\w8I found it in earlier copies of the original journals. \w8I wonder if I could get one out of the Valarian Archives, actually..."
+	}
+
+	all:{"\1\s[10]\0\s[0]\i[1]"
+	"If there's anyone I trust to get sensitive books out of a government building, \w4it's you, \w4Bonnie.\w8\w8\1"
+	"\1Ahaha! \w8Aww, you mean it?\w8\w8\0\n\n[half]"
+	"\0It's so hot, Bonnie.\w8\w8\1\n\n[half]"
+	"\1O-Oh! \w8W-Well!"
+	}
+
+	all:{"\0\s[0]\i[1]\1\s[11]"
+	"\1G-Gosh! \w8I, \w8um... \w8\w8Do you want to... \w8Kiss me and prove it?"
+	"\0\s[1]\i[1]Ha! You're not watching the movie at all, are you?"
+	}
+
+	all:{"\1\s[11]\i[1000]\0\s[0]\i[1]\i[1000]"
+	"...O-Ow, ow, wait. My chest, i-its...\w8\w8\1"
+	"O-Oh my gosh! You— Your gem!\w8\w8\0\n\n[half]"
+	"Hhhaah... \w8\w8I-It's okay, Bonnie...\w8\w8\1\n\n[half]"
+	"Shoot, where'd you put your spare gems?\w8\w8\0\n\n[half]"
+	"I have a new thing... \w8\w8Over there, \w8that thing...\w8\w8\1\n\n[half]"
+	"What is— \w8\w8Is this \w8\0\s[0]\i[1001]\1\s[11]\i[1001]a Resonance Compressor?\w8\w8\0\n\n[half]"
+	"Y-Yeah. \w8It is. \w8\w8T-Thank you. \w8It... \w8It hurts less now." 
+	}
+
+	all:{"\1\s[11]\0\s[0]"
+	"The, uh... \w8Valarian Performance Agency gave me a real fancy model. \w8I can spend less on Repo gem transfers.\w8\w8\1"
+	"Oh, Vala... \w8I've never seen one of these outside hospitals.\w8\w8\0\n\n[half]"
+	"\s[1]I'm surprised you even knew what it was. \w8When they first showed it to me, I thought they were stringing me up for some kind of experiment.\w8\w8\1\n\n[half]"
+	"\s[10]...And even then, \w4the ones in the hospitals are bigger. \w8They really slimmed them down."
+	"Right?"
+	}
+
+	all:{"\1\s[10]\0\s[0]"
+	"Well... \w8\s[1]It works. \w8\w8\s[0]Sorry about that.\w8\w8\1"
+	"Syllie, don't say sorry. \w8Remember? \w8We live together, it's not an issue to me when it's your life.\w8\w8\0\n\n[half]"
+	"\s[1]Bonnie..."
+	}
+
+	all:{"\1\s[10]\0\s[0]"
+	"...I figure you picked up on what \w8these things were \w8in the archives?\w8\w8\1"
+	"Of course I'd go looking into External Resonance Control. I have access to a lot, and I think about you all the time... \w8I could only find the big machines, though. \w8Um, \w8actually, \w8do you have a specific reason for asking?\w8\w8\0\n\n[half]"
+	"If this thing weren't so expensive, I was considering dismantling it and seeing how it worked. \w8I'll be damned if I have to put any more of my life in the hands of the VPA.\w8\w8\1\n\n[half]"
+	"No, I was thinking the same thing! \w8Engineering isn't really either of our strong suits, but there's no harm in looking at those diagrams again..."
+	}
+
+	all:{"\1\s[10]\0\s[1]"
+	"...Well, \w6you were already gonna get that old copy of Alnoth's Adventures out of the Valarian. \w8Let's take the days slow, sugarplum. \w8Especially since I can actually afford the stuff now.\w8\w8\1"
+	"W-Well, that is true... \w8I want that, too. \w8Seeing you, I mean.\i[1000]\0\i[1000]"
+	}
+
+	all:{"\1\s[10]\i[1001]\0\s[0]\i[1001]"
+	"...Aw. \w8I completely lost track of the movie.\w8\w8\1"
+	"Well, we do already know the ending! Comfy background noise, right?\w8\w8\0\n\n[half]"
+	"\s[1]Haha! \w8Yes, I liked that. \w8But \w8I do have a headache now. \w8Can we take a break?\w8\w8\1\n\n[half]"
+	"Of course, Syllie."
+	}
+
+	all:{"\1\s[10]\0\s[0]"
+	"...This was the first thing we did together when I moved into your dorm. \w8It's weird.\w8\w8\1"
+	"The movie is weird?\w8\w8\0\n\n[half]"
+	"\s[1]Not the movie! \w8It's..."
+	}
+
+	all:{"\1\s[10]\0\s[0]"
+	"You used to cover your face and curl up your little legs whenever the bunwolf jumped at the screen.\w8\w8\1"
+	"Pfft-- Did you think that was cute?\w8\w8\0\n\n[half]"
+	"Maybe. A little bit. It was more you being brave enough to tough it out. You were so invested in the plot, you kept asking me questions after, and I think... \w8\s[1]I really like that part of you.\w8\w8\1\n\n[half]"
+	"Aww, that's a good thing then, isn't it?"
+	}
+
+	all:{"\1\s[10]\0\s[0]"
+	"...Yeah. \w4That difference doesn't bother me at all. \w8It's more about... \w8How much bigger this place is. \w8It's so much quieter after a movie with all the space. \w8Emptier. \w8But what really gets me is how cold it is here.\w8\w8\1"
+	"No, you're right. \w8It's cold. \w8And there's nothing to cozy up on with this mattress... \w8\w8Oh! \w8\0\s[1]\1\s[11]One moment! \w8\0\i[1000]\1\i[1000]I have something for this!"
+	}
+
+	all:{"\0\s[1]\i[1010]\1\s[11]\i[1010]"
+	"Ta-da~!\w8\w8\0"
+	"...That's the quilt we made during second-year craft day.\w8\w8\1\n\n[half]"
+	"The quilt you kept stealing from me! \w8And now... \w8You can steal it again!\w8\w8\0\n\n[half]"
+	"Honestly, I... \w8I'm surprised you kept it this long."
+	}
+
+	all:{"\0\s[1]\i[1010]\1\s[11]\i[1010]"
+	"Here, Syllie. \w8Isn't that better?\w8\w8\0"
+	"\s[0]\i[1010]...Yeah."
+	"\e:chain=end"
+	}
+}}CHAIN

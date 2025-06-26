@@ -1,0 +1,70 @@
+OnFirstBoot
+{
+	LastTalk = ""
+	OnLastTalk
+}
+
+OnInitialize
+{
+	//OnInitialize is a NOTIFY event! That means it cannot return scripts. This event is only meant for things like variable changes. See this page on Ukadoc for more info: https://ukagakadreamteam.github.io/ukadoc/manual/spec_shiori3.html
+	
+	if reference0 != "reload"
+	{
+		LastTalk = ""
+	}
+	
+}
+
+/*
+OnFirstConvo
+{
+	all:{"\t\*\0\s[0]\1\s[20]"
+	"Sylvie, are you... \w8\0\s[1]\1In here? \w8\w8Gosh, this door is so fancy... \w8\w8Um, \w8can I come in?\w8\w8\0"
+	"Y-Yes. \w8\w8Come in. \w8\w8Please.\w8\w8\w8\1\n\n[half]"
+	"\s[11]Ehehe. \w8Excuse me, then~🎵"
+	"\e:chain=convoblanket"}
+}
+//if i ever feel like migrating this to celestes system this can stay here
+*/
+
+OnBoot
+{
+	/*
+	all:{"\t\*\1\s[20]\0\s[0]"
+	"..\w8\w8\s[1]\w8Bonnie? \w8\w8Is that you?\w8\w8\w8\1"
+	"Yup! \w8May I come in?\w8\w8\0\s[0]\n\n[half]"
+	"Of course, \w8sugarplum.\w8\w8\1\s[10]"}
+	*/
+	
+	OnLastTalk
+	
+	//i think the chain solution is temporary so this weird fenangling wont stay probably. ill replace it with the system celeste has later.
+}
+
+OnLastTalk
+{
+	if LastTalk == ""
+	{
+		LastTalk = "\t\*\0\s[0]\1\s[20]Sylvie, are you... \w8\0\s[1]\1In here? \w8\w8Gosh, this door is so fancy... \w8\w8Um, \w8can I come in?\w8\w8\0Y-Yes. \w8\w8Come in. \w8\w8Please.\w8\w8\w8\1\n\n[half]\s[11]Ehehe. \w8Excuse me, then~🎵 \w8\e:chain=convo_blanket"
+	}
+	LastTalk
+}
+
+OnClose
+{
+	/*
+	all:{"\0\s[1]\1\s[10]"
+	"Ah! \w8I should really get back to it, Syllie. \w8\w8\s[11]\0\s[1]\1It was good seeing you today.\w8\w8\0"
+	"Likewise. Let me know if you get into anything you need my help with, okay?\w8\w8\1\n\n[half]"
+	"Ehehehe. I like when we get all formal around eachother.\w8\w8\0\n\n[half]"
+	"\s[0]Okay, okay, get going already.\w8\w8\1\n\n[half]"
+	"\s[20]Got it~"}
+	*/
+	
+	if CHAIN.IDName != ""
+	{"\0It feels like... \w8\w8A memory, \w8fading away. \w8\w8\1\i[1000]\0\i[1000]You let it pass, \w8for now."}
+	else
+	{"\0\s[0]\i[1010]\1\s[11]\i[1010]You work so hard, Sylvie. \w8\w8\s[20]\i[1010]Sweet dreams."}
+	--
+	"\w8\w8\w8\-"
+}

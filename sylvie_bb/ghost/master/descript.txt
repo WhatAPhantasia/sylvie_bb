@@ -1,0 +1,19 @@
+charset,UTF-8
+
+name,Sylvie
+type,ghost
+
+shiori,yaya.dll
+
+craftman,WhatAPhantasia
+craftmanw,WhatAPhantasia
+craftmanurl,https://whataphantasia.github.io/projects/ukagaka/
+
+sakura.name,Sylvie
+kero.name,Bonnie
+
+balloon,Stitched Together
+
+icon,teardrop.ico
+
+sstp.allowunspecifiedsend,0

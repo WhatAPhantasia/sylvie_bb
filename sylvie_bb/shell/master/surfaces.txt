@@ -1,0 +1,48 @@
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Sakura surfaces ——————————————————————————————
+
+surface0
+{
+	
+}
+
+//—————————————————————————————— Kero surfaces ——————————————————————————————
+
+surface10
+{
+	
+}
+
+surface.append0-9,50-52
+{
+	animation0.interval,runonce
+	animation0.pattern0,interpolate,1500,0,0,0
+	animation1.interval,never
+	animation1.pattern0,stop,0
+}
+
+surface.append0-52
+{
+	animation1000.interval,never
+	animation1000.pattern0,overlayfast,1000,0,0,0
+	animation1000.pattern1,overlayfast,1001,100,0,0
+	animation1000.pattern2,overlayfast,1002,100,0,0
+	animation1000.pattern3,overlayfast,1003,100,0,0
+	animation1000.pattern4,overlayfast,1004,100,0,0
+	
+	animation1001.interval,never
+	animation1001.pattern0,parallelstop,(1000,1010)
+	animation1001.pattern1,overlayfast,1002,0,0,0
+	animation1001.pattern2,overlayfast,-1,100,0,0
+	animation1001.pattern3,overlayfast,1001,0,0,0
+	animation1001.pattern4,overlayfast,-1,100,0,0
+	animation1001.pattern5,overlayfast,1000,0,0,0
+	animation1001.pattern6,overlayfast,-1,100,0,0
+	
+	animation1010.interval,never
+	animation1010.pattern0,overlayfast,1004,0,0,0
+}
