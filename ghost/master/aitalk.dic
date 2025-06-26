@@ -100,20 +100,20 @@ convo_blanket
 
 	all:{"\1\s[11]\0\s[0]"
 	"The, uh... \w8Valarian Performance Agency gave me a real fancy model. \w8I can spend less on Repo gem transfers.\w8\w8\1"
-	"Oh, Vala... \w8I've never seen one of these outside hospitals.\w8\w8\0\n\n[half]"
-	"\s[1]I'm surprised you even knew what it was. \w8When they first showed it to me, I thought they were stringing me up for some kind of experiment.\w8\w8\1\n\n[half]"
-	"\s[10]...And even then, \w4the ones in the hospitals are bigger. \w8They really slimmed them down."
+	"Oh, wow... \w8I've never seen one of these outside hospitals. \w8That's a big deal... \w8And \w8really good for you, right?\w8\w8\0\n\n[half]"
+	"\s[1]Yes, but I'm surprised you even knew what it was. \w8When they first showed it to me, I thought they were stringing me up for some kind of experiment.\w8\w8\1\n\n[half]"
+	"\s[10]Haha, yeah, the ones in the hospitals are bigger. \w8Whatever resources they have internally must be really good to have slimmed them down so much!\w8\w8\0\n\n[half]"
 	"Right?"
 	}
 
 	all:{"\1\s[10]\0\s[0]"
 	"Well... \w8\s[1]It works. \w8\w8\s[0]Sorry about that.\w8\w8\1"
-	"Syllie, don't say sorry. \w8Remember? \w8We live together, it's not an issue to me when it's your life.\w8\w8\0\n\n[half]"
+	"Syllie, don't say sorry. \w8Remember? \w8We live together, it's not an issue to me because it's your life.\w8\w8\0\n\n[half]"
 	"\s[1]Bonnie..."
 	}
 
 	all:{"\1\s[10]\0\s[0]"
-	"...I figure you picked up on what \w8these things were \w8in the archives?\w8\w8\1"
+	"...So, \w6um, \w6you learned about these kinds of things through the archives?\w8\w8\1"
 	"Of course I'd go looking into External Resonance Control. I have access to a lot, and I think about you all the time... \w8I could only find the big machines, though. \w8Um, \w8actually, \w8do you have a specific reason for asking?\w8\w8\0\n\n[half]"
 	"If this thing weren't so expensive, I was considering dismantling it and seeing how it worked. \w8I'll be damned if I have to put any more of my life in the hands of the VPA.\w8\w8\1\n\n[half]"
 	"No, I was thinking the same thing! \w8Engineering isn't really either of our strong suits, but there's no harm in looking at those diagrams again..."

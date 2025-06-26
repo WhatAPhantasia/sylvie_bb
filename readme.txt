@@ -1,4 +1,4 @@
-﻿sylvie v0.5.0
+﻿sylvie v0.5.1
 
 i missed you. did you miss me, too?
 
